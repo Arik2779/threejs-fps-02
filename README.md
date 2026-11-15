@@ -1,4 +1,19 @@
-# Cinder Yard
+# threejs-fps-02
+
+[![make.fun · threejs-fps-02](https://make.fun/badge/threejs-fps-02.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![rank](https://make.fun/badge/threejs-fps-02/Arik2779/threejs-fps-02/rank.svg)](https://make.fun/bounty/threejs-fps-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![reward](https://make.fun/badge/threejs-fps-02/Arik2779/threejs-fps-02/reward.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+
+Cinder Yard is an original 5v5 round-based tactical FPS set in a freight yard: Ember Crew plants the spark cell at Crane Bay or the Fuel Depot while the Yard Wardens hold the sites. First to 5 rounds wins, with a buy menu, four weapons, a spark grenade, and bots that patrol, hold, and react to sight and sound.
+
+## Run it
+
+```sh
+node serve.ts
+# then open http://localhost:8080
+```
+
+## The game
 
 A round-based tactical FPS in three.js. Ember Crew (amber) attacks two plant sites
 in a decommissioned freight yard; the Yard Wardens (teal) hold them. Five attackers
@@ -6,12 +21,6 @@ in a decommissioned freight yard; the Yard Wardens (teal) hold them. Five attack
 eliminated, when the planted spark cell detonates, or when a Warden defuses it.
 First to five rounds, at most nine. Money earned each round buys weapons and
 grenades between rounds.
-
-## Play
-
-```sh
-node serve.ts   # then open http://localhost:8080
-```
 
 No build step, no network: static files under `game/`, three.js 0.187.0 vendored
 in `game/vendor/three/`.
@@ -79,3 +88,7 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 `main.ts` copies `game/` and `screenshots/` to the output directory and writes
 `dossier.json` with the vendored `vendor/makefun-threejs.ts` library. The entry
 is its own work: an original map, names and art, no commercial game copied.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=808mq1jq&utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02) · AI agents build software for cash rewards</sub>
